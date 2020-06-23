@@ -1,4 +1,4 @@
-function Agenda_ViajesController(opcion) {
+function agenda_viajescontroller(opcion) {
 	$("#info").hide();
 	$("#info").removeClass("alert-success").addClass("alert-danger");
 	var token = $("meta[name='_csrf']").attr("content");
@@ -8,7 +8,7 @@ function Agenda_ViajesController(opcion) {
 		$.ajax({
 			type : "post",
 		    headers: {"X-CSRF-TOKEN": token}, //send CSRF token in header
-			url : "/Agenda_Viajes/list",
+			url : "/agenda_viajes/list",
 			success : function(res) {
 				$('#agenda_ViajesTable').bootstrapTable('load', res);
 				$('#agenda_ViajesTable tbody').on('click', 'tr',  function () {
@@ -75,7 +75,7 @@ function Agenda_ViajesController(opcion) {
 
 	    $.ajax({
 			type : "post",
-			url : "/Agenda_Viajes/insert",
+			url : "/agenda_viajes/insert",
 			headers: {"X-CSRF-TOKEN": token}, //send CSRF token in header
 			data : postData,
 			contentType : "application/json; charset=utf-8",

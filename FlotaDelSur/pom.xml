@@ -68,7 +68,7 @@
 			<groupId>com.oracle.ojdbc</groupId>
 			<artifactId>ojdbc8</artifactId>
 			<scope>system</scope>
-			<systemPath>C:\Users\Lenovo\Desktop\apache-tomcat-9.0.31\lib\ojdbc8.jar</systemPath>
+			<systemPath>/Users/oliverwulf/Desktop/FullStack/apache-tomcat-9.0.36/lib/ojdbc8.jar</systemPath>
 		</dependency>
 		<dependency>
 				<groupId>com.google.code.gson</groupId>

@@ -22,7 +22,7 @@ import cl.icap.fullstack.service.Agenda_ViajesService;
 
 /*llevar para mi codigo con security*/
 @Controller 
-@RequestMapping(value="/Agenda_Viajes")
+@RequestMapping(value="/agenda_viajes")
 public class Agenda_ViajesController {
 	@Autowired
 	Agenda_ViajesService agenda_ViajesService;
